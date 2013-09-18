@@ -11,11 +11,15 @@ dependencies (including the AWS SDK for Node.js) can be installed with:
 
 ## Basic Configuration
 
-You need to set your AWS security credentials in `config.json` before the sample
-is able to connect to AWS. An example of this file is provided as `config.json.sample`.
+You need to set your AWS security credentials before the sample is able to connect to AWS. The SDK will automatically pick up credentials in environment variables:
 
-See the [Security Credentials](http://aws.amazon.com/security-credentials) page
-for more information on getting your keys.
+    export AWS_ACCESS_KEY_ID="Your AWS Access Key ID"
+    export AWS_SECRET_ACCESS_KEY="Your AWS Secret Access Key"
+
+See the [Security Credentials](http://aws.amazon.com/security-credentials) page.
+It's also possible to configure your credentials via a configuration file or
+directly in source. See the AWS SDK for Node.js [Developer Guide](http://docs.aws.amazon.com/AWSJavaScriptSDK/guide/configuring.html)
+for more information.
 
 ## Running the S3 sample
 
