@@ -11,7 +11,9 @@ dependencies (including the AWS SDK for Node.js) can be installed with:
 
 ## Basic Configuration
 
-You need to set your AWS security credentials before the sample is able to connect to AWS. The SDK will automatically pick up credentials in environment variables:
+You need to set your AWS security credentials before the sample is able to
+connect to AWS. The SDK will automatically pick up credentials in environment
+variables:
 
     export AWS_ACCESS_KEY_ID="Your AWS Access Key ID"
     export AWS_SECRET_ACCESS_KEY="Your AWS Secret Access Key"
@@ -24,9 +26,8 @@ for more information.
 ## Running the S3 sample
 
 This sample application connects to Amazon's [Simple Storage Service (S3)](http://aws.amazon.com/s3),
-creates a bucket, and uploads a file to that bucket. We've already included a
-file to upload (`hello_world.txt`) and the `upload_file.rb` script will generate
-a unique bucket name for you. All you need to do is run it:
+creates a bucket, and uploads a file to that bucket. The script will automatically
+create the file to upload. All you need to do is run it:
 
     node s3_sample.js
 
