@@ -6,7 +6,7 @@ A simple Node.js application illustrating usage of the AWS SDK for Node.js.
 
 The only requirement of this application is the Node Package Manager. All other
 dependencies (including the AWS SDK for Node.js) can be installed with:
-    
+
     npm install
 
 ## Basic Configuration
@@ -29,7 +29,7 @@ This sample application connects to Amazon's [Simple Storage Service (S3)](http:
 creates a bucket, and uploads a file to that bucket. The script will automatically
 create the file to upload. All you need to do is run it:
 
-    node s3_sample.js
+    node sample.js
 
 The S3 documentation has a good overview of the [restrictions for bucket names](http://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html)
 for when you start making your own buckets.
