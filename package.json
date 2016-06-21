@@ -2,5 +2,12 @@
     "dependencies": {
         "aws-sdk": ">= 2.0.9",
         "node-uuid": ">= 1.4.1"
+    },
+
+    "license": "(Apache-2.0)",
+
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/awslabs/aws-nodejs-sample.git"
     }
 }
