@@ -31,6 +31,6 @@ s3.createBucket({Bucket: bucketName}, () => {
     if (err)
       console.log(err)
     else
-      console.log("Successfully uploaded data to " , bucketName , "/" , keyName);
+      console.log('Successfully uploaded data to ' , bucketName , '/' , keyName);
   });
 });
