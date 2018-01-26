@@ -35,6 +35,15 @@ create the file to upload. All you need to do is run it:
 The S3 documentation has a good overview of the [restrictions for bucket names](http://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html)
 for when you start making your own buckets.
 
+## Running the DynamoDB Local sampel
+
+This sample application connects to DynamoDb local [DynamoDB Local](http://aws.amazon.com/es/blogs/aws/dynamodb-local-for-desktop-development/), creates a local connection and you can do querys over the DynamoDB Local running locally. All you need to do is run it:
+
+    node sample-dynamoDB.js
+
+The DynamoDb documentation you cand found in this place_
+http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.DynamoDBLocal.html.
+
 ## License
 
 This sample application is distributed under the
