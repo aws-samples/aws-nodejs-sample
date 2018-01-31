@@ -12,25 +12,36 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
-**/
+ **/
 
-// Load the SDK and UUID
+// Load the SDK
 var AWS = require('aws-sdk');
-var uuid = require('node-uuid');
 
 // Create an S3 client
 var s3 = new AWS.S3();
 
-// Create a bucket and upload something into it
-var bucketName = 'node-sdk-sample-' + uuid.v4();
+var bucketName = 'node.sdk.sample.bucket';
 var keyName = 'hello_world.txt';
+var lastModified = new Date().toString();
 
-s3.createBucket({Bucket: bucketName}, function() {
-  var params = {Bucket: bucketName, Key: keyName, Body: 'Hello World!'};
-  s3.putObject(params, function(err, data) {
-    if (err)
-      console.log(err)
-    else
-      console.log("Successfully uploaded data to " + bucketName + "/" + keyName);
-  });
+// Check if bucket exists or create a new one
+s3.headBucket({ Bucket: bucketName }, function(errResponse, requestResponse) {
+    var params = { Bucket: bucketName, Key: keyName, Body: 'Hello World! ' + lastModified };
+    if (errResponse) {
+        console.log("Create new bucket before upload");
+        s3.createBucket({ Bucket: bucketName }, function() {
+            s3.putObject(params, uploadFileCallback);
+        });
+    } else {
+        console.log("Bucket already exists, continue with upload");
+        s3.putObject(params, uploadFileCallback);
+    }
 });
+
+// Response handler
+function uploadFileCallback(err, data) {
+    if (err)
+        console.log(err)
+    else
+        console.log("Successfully uploaded data to " + bucketName + "/" + keyName);
+}
