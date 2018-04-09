@@ -18,12 +18,20 @@
 var AWS = require('aws-sdk');
 var uuid = require('node-uuid');
 
+// Insert credential info if using Mac OSX
+AWS.config.update({
+  accessKeyId: 'accessKeyId',  
+  secretAccessKey: 'secretAccessKey',  
+  timeout: 15000                      
+}); 
+
 // Create an S3 client
 var s3 = new AWS.S3();
 
 // Create a bucket and upload something into it
 var bucketName = 'node-sdk-sample-' + uuid.v4();
 var keyName = 'hello_world.txt';
+
 
 s3.createBucket({Bucket: bucketName}, function() {
   var params = {Bucket: bucketName, Key: keyName, Body: 'Hello World!'};
