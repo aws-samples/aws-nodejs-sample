@@ -1,6 +1,8 @@
 {
     "dependencies": {
+        "aws-config": "^1.1.4",
         "aws-sdk": ">= 2.0.9",
-        "node-uuid": ">= 1.4.1"
+        "node-uuid": ">= 1.4.1",
+        "save": "^2.3.2"
     }
 }
