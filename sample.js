@@ -16,13 +16,13 @@
 
 // Load the SDK and UUID
 var AWS = require('aws-sdk');
-var uuid = require('node-uuid');
+var uuidv4 = require('uuid/v4');
 
 // Create an S3 client
 var s3 = new AWS.S3();
 
 // Create a bucket and upload something into it
-var bucketName = 'node-sdk-sample-' + uuid.v4();
+var bucketName = 'node-sdk-sample-' + uuidv4();
 var keyName = 'hello_world.txt';
 
 s3.createBucket({Bucket: bucketName}, function() {
