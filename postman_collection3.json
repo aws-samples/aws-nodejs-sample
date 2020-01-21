@@ -1,0 +1,537 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "300e25bc-14f5-f3ad-8633-e995c2740b13",
+			"name": "Datamining API License",
+			"description": "The Datamining API License grants you:\n\n* The ability to search for FT articles based on specific fields, including body text, headline and section\n* The right to cache headlines for up to 30 days provided you check for deletions or changes\n* A default rate limit of 2 API calls per second and 5,000 API calls per day\n* 140 character SMS / Twitter length compatible titles",
+			"order": [],
+			"folders": [
+				{
+					"name": "Content (Enriched)",
+					"description": "",
+					"collectionId": "300e25bc-14f5-f3ad-8633-e995c2740b13",
+					"collection": "300e25bc-14f5-f3ad-8633-e995c2740b13",
+					"order": [
+						"c3e3e9d3-afdb-afaf-8d00-b131fbfee6ff"
+					],
+					"owner": "2445168",
+					"folders_order": [],
+					"createdAt": 1503481185404,
+					"updatedAt": 1503481185404,
+					"id": "d62660f2-a752-1266-fe77-bd787ecee0df",
+					"collection_id": "300e25bc-14f5-f3ad-8633-e995c2740b13"
+				},
+				{
+					"name": "Notifications",
+					"description": "",
+					"collectionId": "300e25bc-14f5-f3ad-8633-e995c2740b13",
+					"collection": "300e25bc-14f5-f3ad-8633-e995c2740b13",
+					"order": [
+						"b411b115-f15e-ae3c-d5d0-99779beb1ad5"
+					],
+					"owner": "2445168",
+					"folders_order": [],
+					"createdAt": 1503481194470,
+					"updatedAt": 1503481194471,
+					"id": "8f07c42e-2e10-3382-b1f1-1e64aa1085ce",
+					"collection_id": "300e25bc-14f5-f3ad-8633-e995c2740b13"
+				},
+				{
+					"name": "Content",
+					"description": "",
+					"collectionId": "300e25bc-14f5-f3ad-8633-e995c2740b13",
+					"collection": "300e25bc-14f5-f3ad-8633-e995c2740b13",
+					"order": [
+						"33807338-df09-d541-1da3-c042effc36d7"
+					],
+					"owner": "2445168",
+					"folders_order": [],
+					"createdAt": 1503481185404,
+					"updatedAt": 1503481185404,
+					"id": "75602e12-8463-f434-d337-35d2bd69d353",
+					"collection_id": "300e25bc-14f5-f3ad-8633-e995c2740b13"
+				}
+			],
+			"folders_order": [
+				"8f07c42e-2e10-3382-b1f1-1e64aa1085ce",
+				"75602e12-8463-f434-d337-35d2bd69d353",
+				"d62660f2-a752-1266-fe77-bd787ecee0df"
+			],
+			"timestamp": 1505208280685,
+			"synced": true,
+			"remote_id": 0,
+			"owner": "2445168",
+			"sharedWithTeam": false,
+			"subscribed": false,
+			"public": false,
+			"createdAt": 1505314431641,
+			"updatedAt": 1505314431641,
+			"write": true,
+			"published": false,
+			"favorite": false,
+			"permissions": {},
+			"syncedPermissions": {},
+			"shared": false,
+			"hasRequests": true,
+			"requests": [
+				{
+					"id": "33807338-df09-d541-1da3-c042effc36d7",
+					"headers": "X-Api-Key: {{KEY}}\n",
+					"headerData": [
+						{
+							"key": "X-Api-Key",
+							"value": "{{KEY}}",
+							"description": "",
+							"enabled": true
+						}
+					],
+					"url": "http://api.ft.com/content/e949ea92-bdae-11e6-8b45-b8b81dd5d080",
+					"queryParams": [],
+					"pathVariables": {},
+					"pathVariableData": [],
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "300e25bc-14f5-f3ad-8633-e995c2740b13",
+					"data": null,
+					"dataMode": "params",
+					"name": "GET Content 1: ID={ItemId}",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1503481631271,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "75602e12-8463-f434-d337-35d2bd69d353",
+					"owner": "2445168",
+					"collection_id": "300e25bc-14f5-f3ad-8633-e995c2740b13",
+					"isFromCollection": true,
+					"collection": "300e25bc-14f5-f3ad-8633-e995c2740b13"
+				},
+				{
+					"id": "b411b115-f15e-ae3c-d5d0-99779beb1ad5",
+					"headers": "X-Api-Key: {{KEY}}\n",
+					"headerData": [
+						{
+							"key": "X-Api-Key",
+							"value": "{{KEY}}",
+							"description": "",
+							"enabled": true
+						}
+					],
+					"url": "http://api.ft.com/content/notifications?since=2017-08-08T00:00:00.000Z",
+					"queryParams": [
+						{
+							"key": "since",
+							"value": "2017-08-08T00:00:00.000Z",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"pathVariables": {},
+					"pathVariableData": [],
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "300e25bc-14f5-f3ad-8633-e995c2740b13",
+					"data": null,
+					"dataMode": "params",
+					"name": "GET Notifications 2: Since={TimeStamp}",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1503481725650,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "8f07c42e-2e10-3382-b1f1-1e64aa1085ce",
+					"owner": "2445168",
+					"collection_id": "300e25bc-14f5-f3ad-8633-e995c2740b13",
+					"isFromCollection": true,
+					"collection": "300e25bc-14f5-f3ad-8633-e995c2740b13"
+				},
+				{
+					"id": "c3e3e9d3-afdb-afaf-8d00-b131fbfee6ff",
+					"headers": "X-Api-Key: {{KEY}}\n",
+					"headerData": [
+						{
+							"key": "X-Api-Key",
+							"value": "{{KEY}}",
+							"description": "",
+							"enabled": true
+						}
+					],
+					"url": "http://api.ft.com/enrichedcontent/e949ea92-bdae-11e6-8b45-b8b81dd5d080",
+					"queryParams": [],
+					"preRequestScript": null,
+					"pathVariables": {},
+					"pathVariableData": [],
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1503999772867,
+					"name": "GET Content (Enriched) 1: ID={ItemId}",
+					"description": "",
+					"collectionId": "300e25bc-14f5-f3ad-8633-e995c2740b13",
+					"responses": [],
+					"folder": "d62660f2-a752-1266-fe77-bd787ecee0df",
+					"owner": "2445168",
+					"collection_id": "300e25bc-14f5-f3ad-8633-e995c2740b13",
+					"collection": "300e25bc-14f5-f3ad-8633-e995c2740b13"
+				}
+			]
+		},
+		{
+			"id": "5bcccf2d-530c-e25e-e638-9183e16154df",
+			"name": "Headline API Licence",
+			"description": "The Headline API License grants you:\n\n* The ability to search for FT articles based on specific fields, including body text, headline and section\n* The right to cache headlines for up to 30 days provided you check for deletions or changes\n* A default rate limit of 2 API calls per second and 5,000 API calls per day",
+			"order": [],
+			"folders": [
+				{
+					"name": "Search",
+					"description": "",
+					"collectionId": "5bcccf2d-530c-e25e-e638-9183e16154df",
+					"collection": "5bcccf2d-530c-e25e-e638-9183e16154df",
+					"order": [
+						"ce692074-bd98-d3f3-9fc2-5da5e1fc2a07",
+						"4a2f31c7-302d-bcf7-309c-fdff9267e70e",
+						"5213e6ed-1546-f754-f403-07b214a92200",
+						"d3992966-329f-5d12-553c-37c735e3407f",
+						"fcadb318-2621-c96e-e9ec-1bff93c1985c",
+						"2a84fb55-69db-04c9-5551-5bcd6b7687c1",
+						"33ef34f5-c391-aad6-f253-2dc3dac6d24b"
+					],
+					"owner": "2445168",
+					"folders_order": [],
+					"createdAt": 1503481222963,
+					"updatedAt": 1503481222963,
+					"id": "a24724da-eb84-8efb-c942-ad35f84f52d6",
+					"collection_id": "5bcccf2d-530c-e25e-e638-9183e16154df"
+				}
+			],
+			"folders_order": [
+				"a24724da-eb84-8efb-c942-ad35f84f52d6"
+			],
+			"timestamp": 1503482788920,
+			"synced": true,
+			"remote_id": 0,
+			"owner": "2445168",
+			"sharedWithTeam": false,
+			"subscribed": false,
+			"remoteLink": "",
+			"remoteLinkUpdatedAt": null,
+			"public": false,
+			"createdAt": 1505314431646,
+			"updatedAt": 1505314431646,
+			"write": true,
+			"published": false,
+			"favorite": false,
+			"permissions": {},
+			"syncedPermissions": {},
+			"requests": [
+				{
+					"id": "2a84fb55-69db-04c9-5551-5bcd6b7687c1",
+					"headers": "X-Api-Key: {{KEY}}\nContent-Type: application/json\n",
+					"headerData": [
+						{
+							"key": "X-Api-Key",
+							"value": "{{KEY}}",
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"enabled": true
+						}
+					],
+					"url": "http://api.ft.com/content/search/v1",
+					"queryParams": [],
+					"pathVariables": {},
+					"pathVariableData": [],
+					"preRequestScript": "",
+					"method": "POST",
+					"collectionId": "5bcccf2d-530c-e25e-e638-9183e16154df",
+					"data": "{\r\n\t\"queryString\": \"Banks\"   ,\r\n\t\"resultContext\" : {\r\n\t\t \"aspects\" :[  \"title\",\"lifecycle\",\"location\",\"summary\",\"editorial\" ],\r\n\t\t \"sortOrder\" : \"DESC\",\r\n\t\t \"sortField\" : \"initialPublishDateTime\"\r\n\r\n\t}\r\n}",
+					"dataMode": "raw",
+					"name": "POST Search 6: queryString={Banks}, sortOrder={Desc}",
+					"description": "Sort by date (most recent first)",
+					"descriptionFormat": "html",
+					"time": 1503567689256,
+					"version": 2,
+					"responses": [],
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "a24724da-eb84-8efb-c942-ad35f84f52d6",
+					"owner": "2445168",
+					"collection_id": "5bcccf2d-530c-e25e-e638-9183e16154df"
+				},
+				{
+					"id": "33ef34f5-c391-aad6-f253-2dc3dac6d24b",
+					"headers": "X-Api-Key: {{KEY}}\nContent-Type: application/json\n",
+					"headerData": [
+						{
+							"key": "X-Api-Key",
+							"value": "{{KEY}}",
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"enabled": true
+						}
+					],
+					"url": "http://api.ft.com/content/search/v1",
+					"queryParams": [],
+					"preRequestScript": "",
+					"pathVariables": {},
+					"pathVariableData": [],
+					"method": "POST",
+					"data": "{\r\n\t\"queryString\": \"sections:\\\"Energy\\\"\",\r\n\t\"resultContext\" : {\r\n\t\t \"aspects\" :[  \"title\",\"lifecycle\",\"location\",\"summary\",\"editorial\" ]\r\n\t}\r\n}",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1503568490377,
+					"name": "POST Search 7: queryString={Sections}",
+					"description": "Search and retrieve all content in the Energy section",
+					"collectionId": "5bcccf2d-530c-e25e-e638-9183e16154df",
+					"responses": [],
+					"folder": "a24724da-eb84-8efb-c942-ad35f84f52d6",
+					"owner": "2445168",
+					"collection_id": "5bcccf2d-530c-e25e-e638-9183e16154df"
+				},
+				{
+					"id": "4a2f31c7-302d-bcf7-309c-fdff9267e70e",
+					"headers": "X-Api-Key: {{KEY}}\nContent-Type: application/json\n",
+					"headerData": [
+						{
+							"key": "X-Api-Key",
+							"value": "{{KEY}}",
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"enabled": true
+						}
+					],
+					"url": "http://api.ft.com/content/search/v1",
+					"queryParams": [],
+					"preRequestScript": "",
+					"pathVariables": {},
+					"pathVariableData": [],
+					"method": "POST",
+					"data": "{\r\n\t\"queryString\": \"Trump AND title:\\\"Clinton\\\"\",\r\n\t\"queryContext\" : {\r\n\t\t \"curations\" : [ \"ARTICLES\"]\r\n\t}\r\n}",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1503559998094,
+					"name": "POST Search 2: queryString={Trump AND Clinton}, curations={Articles}",
+					"description": "This will search for content that mentions Osborne in any of the searchable fields, but where the headline (title) contains 'Cameron'",
+					"collectionId": "5bcccf2d-530c-e25e-e638-9183e16154df",
+					"responses": [],
+					"owner": "2445168",
+					"collection_id": "5bcccf2d-530c-e25e-e638-9183e16154df",
+					"folder": "a24724da-eb84-8efb-c942-ad35f84f52d6"
+				},
+				{
+					"id": "5213e6ed-1546-f754-f403-07b214a92200",
+					"headers": "X-Api-Key: {{KEY}}\nContent-Type: application/json\n",
+					"headerData": [
+						{
+							"key": "X-Api-Key",
+							"value": "{{KEY}}",
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"enabled": true
+						}
+					],
+					"url": "http://api.ft.com/content/search/v1",
+					"queryParams": [],
+					"preRequestScript": "",
+					"pathVariables": {},
+					"pathVariableData": [],
+					"method": "POST",
+					"data": "{\r\n\t\"queryString\": \"British Telecom\",\r\n\t  \"queryContext\" : {\r\n\t\t \"curations\" : [ \"ARTICLES\"]\r\n\t  },\r\n\t  \"resultContext\" : {\r\n\t\t \"maxResults\": 1,\r\n\t\t \"facets\" : {\"names\":[ \"organisations\"],\"maxElements\":20,\"minThreshold\":1}\r\n\t}\r\n}",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1503564900823,
+					"name": "POST Search 3: queryString={British Telecom}, facets={Organisations}",
+					"description": "You need to know what tag is used for British Telecom as an organisation. One way to do this is to search for relevant content and ask the search to show details of the facets found in the results",
+					"collectionId": "5bcccf2d-530c-e25e-e638-9183e16154df",
+					"responses": [],
+					"owner": "2445168",
+					"collection_id": "5bcccf2d-530c-e25e-e638-9183e16154df",
+					"folder": "a24724da-eb84-8efb-c942-ad35f84f52d6"
+				},
+				{
+					"id": "ce692074-bd98-d3f3-9fc2-5da5e1fc2a07",
+					"headers": "X-Api-Key: {{KEY}}\nContent-Type: application/json\n",
+					"headerData": [
+						{
+							"key": "X-Api-Key",
+							"value": "{{KEY}}",
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"enabled": true
+						}
+					],
+					"url": "http://api.ft.com/content/search/v1",
+					"queryParams": [],
+					"pathVariables": {},
+					"pathVariableData": [],
+					"preRequestScript": "",
+					"method": "POST",
+					"collectionId": "5bcccf2d-530c-e25e-e638-9183e16154df",
+					"data": "{\r\n\t\"queryString\": \"banks\",\r\n\t\"resultContext\" : {\r\n\t\t \"aspects\" :[  \"title\",\"lifecycle\",\"location\",\"summary\",\"editorial\" ]\r\n\t}\r\n}",
+					"dataMode": "raw",
+					"name": "POST Search 1: queryString={Banks}, sortOrder={Desc}",
+					"description": "Aspects are used to specify which fields you want to see in the results",
+					"descriptionFormat": "html",
+					"time": 1503496110265,
+					"version": 2,
+					"responses": [],
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "a24724da-eb84-8efb-c942-ad35f84f52d6",
+					"owner": "2445168",
+					"collection_id": "5bcccf2d-530c-e25e-e638-9183e16154df"
+				},
+				{
+					"id": "d3992966-329f-5d12-553c-37c735e3407f",
+					"headers": "X-Api-Key: {{KEY}}\nContent-Type: application/json\n",
+					"headerData": [
+						{
+							"key": "X-Api-Key",
+							"value": "{{KEY}}",
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"enabled": true
+						}
+					],
+					"url": "http://api.ft.com/content/search/v1",
+					"queryParams": [],
+					"preRequestScript": "",
+					"pathVariables": {},
+					"pathVariableData": [],
+					"method": "POST",
+					"data": "{\r\n\t\"queryString\": \"Apple AND lastPublishDateTime:>2017-01-01T00:00:00Z\",\r\n\t\"queryContext\" : {\r\n\t\t \"curations\" : [ \"BLOGS\"]\r\n\t}\r\n}",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1503567486616,
+					"name": "POST Search 4: queryString={Apple AND lastPublishDateTime}, curations={Blogs}",
+					"description": "Search for blogs that mention Apple and have been published this year",
+					"collectionId": "5bcccf2d-530c-e25e-e638-9183e16154df",
+					"responses": [],
+					"owner": "2445168",
+					"collection_id": "5bcccf2d-530c-e25e-e638-9183e16154df",
+					"folder": "a24724da-eb84-8efb-c942-ad35f84f52d6"
+				},
+				{
+					"id": "fcadb318-2621-c96e-e9ec-1bff93c1985c",
+					"headers": "X-Api-Key: {{KEY}}\nContent-Type: application/json\n",
+					"headerData": [
+						{
+							"key": "X-Api-Key",
+							"value": "{{KEY}}",
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"enabled": true
+						}
+					],
+					"url": "http://api.ft.com/content/search/v1",
+					"queryParams": [],
+					"preRequestScript": "",
+					"pathVariables": {},
+					"pathVariableData": [],
+					"method": "POST",
+					"data": "{\r\n\t  \"queryString\": \"byline:\\\"Martin Wolf\\\" AND lastPublishDateTime:>2017-01-01T00:00:00Z\",\r\n\t  \"queryContext\": {\r\n\t\t\t\"curations\": [\r\n\t\t\t\t\"ARTICLES\"\r\n\t\t\t]\r\n\t\t},\r\n\t\t\"resultContext\" : {\r\n\t\t\t \"aspects\" :[  \"title\",\"lifecycle\",\"location\",\"summary\",\"editorial\" ]\r\n\r\n\t}\r\n}",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1503568003846,
+					"name": "POST Search 5: queryString={Byline AND lastPublishDateTime}, curations={Articles}",
+					"description": "Search for byline Martin Wolf published since 2014",
+					"collectionId": "5bcccf2d-530c-e25e-e638-9183e16154df",
+					"responses": [],
+					"owner": "2445168",
+					"collection_id": "5bcccf2d-530c-e25e-e638-9183e16154df",
+					"folder": "a24724da-eb84-8efb-c942-ad35f84f52d6"
+				}
+			]
+		}
+	],
+	"environments": [],
+	"headerPresets": [
+		{
+			"id": "4546157a-8e0c-d122-7a85-55cd37a35176",
+			"name": "Default",
+			"headers": [
+				{
+					"key": "X-Api-Key ",
+					"value": "{{KEY}}",
+					"description": "",
+					"type": "text",
+					"enabled": true,
+					"disabled": false
+				},
+				{
+					"key": "Content-Type",
+					"value": "text/html",
+					"description": "",
+					"type": "text",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"timestamp": 1502976853440
+		}
+	],
+	"globals": []
+}
