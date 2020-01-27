@@ -27,19 +27,19 @@ public class BaseClass {
 		{	
 			case "FF":
 				System.out.println("in FF");
-				System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", "openmrs/geckodriver.exe");
 				driver = new FirefoxDriver();
 				break;
 			case "IE":
 				System.out.println("in IE");
-				System.setProperty("webdriver.ie.driver","IEDriverServer.exe");
+				System.setProperty("webdriver.ie.driver","openmrs/IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
 				//zoom set to 100%
 				//Enabled protected mode for all the zones..
 				break;
 			case "CH":
 				System.out.println("in CH");
-				System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "openmrs/chromedriver.exe");
 				driver = new ChromeDriver();
 				break;
 			default:
