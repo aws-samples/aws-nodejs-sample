@@ -32,8 +32,7 @@
 							<suiteXmlFiles>
 								<suiteXmlFile>QA.xml</suiteXmlFile>
 							</suiteXmlFiles>
-						</configuration>
-						<configuration>
+						
                                                                 <testFailureIgnore>true</testFailureIgnore>
 						</configuration>
 					</plugin>
@@ -66,8 +65,7 @@
 							<suiteXmlFiles>
 								<suiteXmlFile>DEV.xml</suiteXmlFile>
 							</suiteXmlFiles>
-						</configuration>
-						<configuration>
+						
                                                                 <testFailureIgnore>true</testFailureIgnore>
 						</configuration>
 					</plugin>
