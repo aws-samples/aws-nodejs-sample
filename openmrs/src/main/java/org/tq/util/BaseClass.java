@@ -27,7 +27,7 @@ public class BaseClass {
 		{	
 			case "FF":
 				System.out.println("in FF");
-				System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", "geckodriver");
 				driver = new FirefoxDriver();
 				break;
 			case "IE":
