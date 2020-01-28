@@ -21,13 +21,13 @@ const webdriver = require('selenium-webdriver');
 */
 
 // username: Username can be found at automation dashboard
-const USERNAME = '{username}';
+const USERNAME = 'ajaykorni';
 
 // AccessKey:  AccessKey can be generated from automation dashboard or profile section
-const KEY = '{accessKey}';
+const KEY = 'ajaykorni';
 
 // gridUrl: gridUrl can be found at automation dashboard
-const GRID_HOST = 'hub.lambdatest.com/wd/hub';
+const GRID_HOST = 'facebook.com';
 
 function searchTextOnGoogle() {
 
