@@ -33,7 +33,7 @@ function searchTextOnGoogle() {
 
     // Setup Input capabilities
     const capabilities = {
-        platform: 'windows 10',
+        platform: 'ubuntu',
         browserName: 'chrome',
         version: '67.0',
         resolution: '1280x800',
